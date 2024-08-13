@@ -1,0 +1,93 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: white; /* Modo claro padrão */
+    color: black; /* Cor do texto no modo claro */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para o fundo e a cor do texto */
+}
+
+/* Link sem sublinhado */
+a {
+    text-decoration: none;
+}
+
+/* Ajuste para as imagens dentro dos links */
+a img {
+    vertical-align: middle;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão de alternância */
+#switch {
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Estilo do ícone no botão de alternância */
+#switch i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s; /* Transição suave para a cor do ícone */
+}
+
+/* Estilo do ícone ao passar o mouse */
+#switch i:hover {
+    color: #555;
+}
+
+/* Estilo da foto de perfil */
+.profile-photo {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Modo escuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Ajuste de cores para o modo escuro */
+.dark-mode header h1,
+.dark-mode header h2,
+.dark-mode header p,
+.dark-mode .job p {
+    color: lightgray; /* Ajusta a cor do texto no modo escuro */
+}
+
+.dark-mode #switch i {
+    color: lightgray; /* Ajusta a cor do ícone no modo escuro */
+}
+
+.dark-mode .container {
+    background-color: #000000; /* Ajusta a cor de fundo do container no modo escuro */
+    color: white;
+    border-radius: 8px; /* Opcional: Adiciona bordas arredondadas ao container */
+    padding: 20px; /* Ajusta o padding para compensar a borda arredondada */
+}
